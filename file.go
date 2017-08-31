@@ -19,10 +19,6 @@ func (f *ABCFile) UnmarshalText(text []byte) error {
 	return nil
 }
 
-func (f *ABCFile) Read(p []byte) (int, error) {
-	return -1, nil
-}
-
 func newABCFile() *ABCFile {
 	f := &ABCFile{}
 	return f

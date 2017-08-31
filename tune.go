@@ -2,11 +2,16 @@ package abc
 
 type MusicCode string
 
-type TuneBody struct {
-	Code MusicCode
+type TuneHeader struct {
+	ReferenceNumber int
+	Title           string
+	Fields          []InformationField
+	Key             string
 }
 
-type TuneHeader struct {
+type TuneBody struct {
+	Code   MusicCode
+	Fields []InformationField
 }
 
 type ABCTune struct {
